@@ -2,7 +2,7 @@
 const input = document.querySelector('#input');
 const search = document.querySelector('.search');
 const card = document.querySelector('.card')
-// const reset = document.querySelector('.reset')
+const reset = document.querySelector('.reset')
 
 const getWeatherInfo= async ()=>{
    if(card.innerHTML.toLowerCase().includes(input.value.toLowerCase())){
@@ -30,5 +30,8 @@ const getWeatherInfo= async ()=>{
     
 
 }
-
+const resetWindow =()=>{
+    location.reload();
+}
 search.addEventListener('click',getWeatherInfo);
+reset.addEventListener('click',resetWindow);
