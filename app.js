@@ -26,7 +26,7 @@ const getWeatherInfo = async () => {
               <span>${name}</span>
               <sup>${sys.country}</sup>
           </h2>
-          <div class="city-temp">${main.temp}<sup>°</sup>C</div>
+          <div class="city-temp">${Math.round(main.temp)}<sup>°</sup>C</div>
           <figure>
               <img class="city-icon" src="http://openweathermap.org/img/wn/${weather[0].icon}@2x.png">
               <figcaption>${weather[0].description}</figcaption>
