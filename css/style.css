@@ -1,43 +1,86 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: rgb(52, 161, 245);
+  /* background-image: url("../image/IMG-20200709-WA0003.jpeg"); */
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
 
 }
-body{
-    background-color: aqua;
-    background-image: url("../image/IMG_20190113_163400_545.jpg");
-    background-size:cover;
-    height:100vh;
-
+.container {
+  margin-top: 15vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 2rem;
 }
-.container{
-    margin-top: 10vh;
-    display: flex;
-    flex-direction: column;
+#input {
+  border: none;
+  height: 2rem;
+  width: 13rem;
+  padding: 0.5rem;
+  border-radius: 10px;
+  opacity: 0.8;
+}
+#input:focus {
+  outline: none;
+}
+.btn {
+  height: 2rem;
+  width: 4rem;
+  border: none;
+  border-radius: 5px;
+  background-color: black;
+  opacity: 0.7;
+  color: white;
+}
+h1 {
+  margin-bottom: 2rem;
+  color: white;
+  opacity: 0.8;
+}
+.description{
+  text-align: center;
+  margin-top: 1rem;
+  color: white;
+}
+
+/* ************ */
+.card{
+    display:flex ;
+    flex-direction: row;
+    gap: 2rem;
+    margin-top: 2rem;
     justify-content: center;
     align-items: center;
     text-align: center;
-    font-size: 2rem;   
 }
-#input{
-    border: none;
-    height: 2rem;
-    width: 13rem;
-    padding: 0.5rem;
-    border-radius: 10px;
+.card .city-icon {
+  margin-top: 5px;
+  width: 100px;
+  height: 100px;
 }
-#input:focus{
-    outline: none;
+.card .city-name sup {
+  padding: 0.2em 0.6em;
+  border-radius: 30px;
+  color: orange;
 }
-.btn{
-    height: 2rem;
-    width: 4rem;
-    border: none;
-    border-radius: 5px;
-    background-color:black;
-    color: white;
+.card .city sup {
+  font-size: 0.5em;
 }
-h1{
-    margin-bottom: 2rem;
+.card .city-temp {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-top: 10px;
+  color:black;
+}
+.card figcaption {
+  margin-top: 10px;
+  text-transform: uppercase;
 }
