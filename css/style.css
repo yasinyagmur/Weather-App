@@ -6,6 +6,10 @@
 }
 body{
     background-color: aqua;
+    background-image: url("../image/IMG_20190113_163400_545.jpg");
+    background-size:cover;
+    height:100vh;
+
 }
 .container{
     margin-top: 10vh;
