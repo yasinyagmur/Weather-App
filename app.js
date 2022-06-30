@@ -12,7 +12,7 @@ const getWeatherInfo = async () => {
     }, 5000);
     input.value = "";
   } else {
-    const key = "c101019b3917ef4c27af74063e4ec864";
+    const key = "3ee5b24de6402c27e90ee1c9ea27987d";
     const url = `https://api.openweathermap.org/data/2.5/weather?q=${input.value}&units=metric&appid=${key}`;
     try {
       const response = await fetch(url);
